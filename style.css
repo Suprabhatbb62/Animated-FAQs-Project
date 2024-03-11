@@ -1,0 +1,42 @@
+body {
+    background-color: #DBE7ED;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq{
+    padding: 3% 10% 10% 10%;
+}
+
+.accordian {
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    background-color: white;
+    padding: 7px 7px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 7px rgb(51, 148, 153);
+    cursor: pointer;
+}
+
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    margin-right: 10px;
+    /* when clicked animation shown. not within active, bcz it will showed both with active & without active */
+    transition: transform 0.3s;
+}
+.icon.active{
+    transform: rotate(-180deg);
+}
+/* //bydefault answers are hidden */
+.answers{
+    max-height: 0;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+/* //when add active class, answers will visible */
+
+/* .answers.active{
+    max-height: max-content;
+} */
